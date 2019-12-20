@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/tabImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:contentDescription="@string/img_placeholder" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/tab_title" android:id="@id/tabTitle" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" app:layout_constraintLeft_toLeftOf="@id/tabImageView" app:layout_constraintRight_toRightOf="@id/tabImageView" app:layout_constraintTop_toBottomOf="@id/tabImageView" />
+</android.support.constraint.ConstraintLayout>

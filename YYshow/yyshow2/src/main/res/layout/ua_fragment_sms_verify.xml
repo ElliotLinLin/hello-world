@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/ua_fragment_verify_txt_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" style="@style/UA.TextView.Normal" />
+    <View android:layout_marginTop="5.0dip" style="@style/UA.Divider.Solid.Horizontal" />
+    <LinearLayout style="@style/UA.EditText.Layout">
+        <ImageView android:src="@drawable/ua_ic_token" android:contentDescription="@string/ua_contentDescription" style="@style/UA.EditText.DrawableLeft" />
+        <com.yy.udbauth.ui.widget.UdbEditText android:id="@id/ua_fragment_verify_et_token" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="30" android:layout_weight="1.0" android:inputType="number" style="@style/UA.EditText.Theme" />
+        <ImageButton android:id="@id/ua_fragment_verify_btn_clear_token" android:src="@drawable/ua_ic_delete" android:contentDescription="@string/ua_contentDescription" style="@style/UA.EditText.DrawableRight" />
+        <com.yy.udbauth.ui.widget.UdbButton android:textSize="15.0sp" android:id="@id/ua_fragment_verify_btn_get_verify" android:layout_width="130.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="@string/ua_verify_btn_get_sms_code" android:singleLine="true" style="@style/UA.Button.Theme" />
+    </LinearLayout>
+    <View style="@style/UA.Divider.Solid.Horizontal" />
+    <Button android:id="@id/ua_fragment_verify_btn_ok" android:layout_width="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="37.0dip" android:layout_marginRight="15.0dip" android:text="@string/ua_verify_btn_submit" style="@style/UA.Button.Theme" />
+    <RelativeLayout android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip">
+        <TextView android:id="@id/ua_fragment_verify_btn_goto_sms_up" android:background="@null" android:clickable="true" android:text="@string/ua_can_not_receive_sms" android:layout_alignParentRight="true" style="@style/UA.TextView.Theme" />
+    </RelativeLayout>
+</LinearLayout>

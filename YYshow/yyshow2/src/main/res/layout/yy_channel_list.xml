@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/theme_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.chenglei1986.navigationbar.NavigationBar android:id="@id/navigation_bar" android:layout_width="fill_parent" android:layout_height="@dimen/standard_row_height" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textColor="@color/gray60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/choose_output_channel" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_marginStart="15.0dip" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/channels_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

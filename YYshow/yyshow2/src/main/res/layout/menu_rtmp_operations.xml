@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@android:color/white" android:gravity="center" android:id="@id/edit" android:background="@color/transparent" android:layout_width="100.0dip" android:layout_height="@dimen/standard_row_height" android:text="编辑" />
+    <View android:background="@color/theme_black" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <Button android:textColor="@android:color/white" android:gravity="center" android:id="@id/delete" android:background="@color/transparent" android:layout_width="100.0dip" android:layout_height="@dimen/standard_row_height" android:text="@string/delete" />
+</LinearLayout>

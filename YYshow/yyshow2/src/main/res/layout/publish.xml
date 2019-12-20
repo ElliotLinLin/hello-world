@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/remote_view_group" android:background="@color/dark_green" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:screenOrientation="landscape" android:id="@id/camera_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="10.0dip">
+        <TextView android:textColor="@android:color/white" android:id="@id/timer_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00:00" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/white_text_internet" android:layout_centerVertical="true" android:contentDescription="@string/img_placeholder" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/timer_text_view" />
+    </RelativeLayout>
+    <RelativeLayout android:background="@drawable/shape_rect_rounded_34h_translucent_gray" android:layout_width="100.0dip" android:layout_height="34.0dip" android:layout_marginTop="12.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/state_on_preview" android:background="@drawable/shape_circle_8d_white" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_centerVertical="true" android:contentDescription="@string/img_placeholder" android:layout_marginStart="17.0dip" />
+        <com.cunoraz.gifview.library.GifView android:id="@id/live_bulb" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_centerVertical="true" android:layout_alignStart="@id/state_on_preview" app:gif="@mipmap/breathe_light_red" />
+        <TextView android:textSize="14.0sp" android:textColor="@android:color/white" android:id="@id/state_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="准备中" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/state_on_preview" />
+    </RelativeLayout>
+    <ImageButton android:id="@id/button_close" android:background="@mipmap/x_shadow_white" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:contentDescription="@string/img_placeholder" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" android:elevation="0.0dip" />
+    <ImageButton android:id="@id/button_switch" android:background="@mipmap/camera_switch" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_alignParentBottom="true" android:contentDescription="@string/img_placeholder" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
+    <ImageButton android:id="@id/button_effector" android:background="@mipmap/magic_stick_x" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@id/button_switch" android:contentDescription="@string/img_placeholder" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/button_switch" />
+</RelativeLayout>

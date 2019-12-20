@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.github.chenglei1986.navigationbar.NavigationBar android:id="@id/navigation_bar" android:layout_width="fill_parent" android:layout_height="@dimen/min_navigation_bar_height" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="62.0dip" android:paddingRight="62.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="62.0dip" android:paddingEnd="62.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/logo_image_view" android:layout_width="85.0dip" android:layout_height="85.0dip" android:layout_marginTop="@dimen/standard_row_height" android:layout_marginBottom="10.0dip" android:src="@mipmap/m_oval_black" android:contentDescription="@string/img_placeholder" />
+        <com.yy.mshow.peripherals.PastingMonitorEditText android:textSize="14.0sp" android:textColor="@android:color/white" android:textColorHint="@color/gray27" android:gravity="center" android:id="@id/url_string_field" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/standard_row_height" android:hint="@string/rtmp_input_tint" android:inputType="textUri" style="?android:attr/borderlessButtonStyle" />
+        <View android:background="@color/light_black" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <EditText android:textSize="14.0sp" android:textColor="@android:color/white" android:textColorHint="@color/gray27" android:gravity="center" android:id="@id/live_code_field" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="@dimen/standard_row_height" android:hint="@string/live_code_input_tint" android:inputType="text" style="?android:attr/borderlessButtonStyle" />
+        <View android:background="@color/light_black" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Button android:textSize="16.0sp" android:textColor="@color/gray20" android:id="@id/confirm_button" android:background="@drawable/selector_bar_rounded_green" android:layout_width="fill_parent" android:layout_height="@dimen/standard_row_height" android:layout_marginTop="50.0dip" android:text="@string/confirm" style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+</LinearLayout>

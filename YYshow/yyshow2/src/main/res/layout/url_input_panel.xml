@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="添加网络源" />
+    <View android:background="@color/gray20" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <EditText android:textSize="15.0sp" android:textColor="@android:color/white" android:textColorHint="@color/gray40" android:gravity="center_vertical" android:id="@id/url_string_field" android:background="@color/gray20" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:hint="请输入RTMP地址" android:inputType="textUri" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" style="?android:attr/borderlessButtonStyle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/history_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+        <View android:background="@color/gray20" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <View android:background="@color/gray20" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@color/gray60" android:id="@id/cancel_button" android:background="@drawable/selector_states_transparent_gray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+        <View android:background="@color/gray20" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <Button android:textSize="18.0sp" android:textColor="@color/bright_green" android:id="@id/confirm_button" android:background="@drawable/selector_states_transparent_gray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="确定" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/theme_black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.github.chenglei1986.navigationbar.NavigationBar android:id="@id/navigation_bar" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="@dimen/min_navigation_bar_height" android:layout_marginBottom="@dimen/compact_row_height" app:nv_titleText="分辨率" app:nv_titleColor="@android:color/white" />
+    <ListView android:id="@id/listView" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:dividerHeight="1.0dip" />
+</LinearLayout>

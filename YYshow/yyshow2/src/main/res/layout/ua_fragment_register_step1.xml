@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:background="@null" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:clickable="true" android:layout_height="58.0dip" android:text="@string/ua_register_txt_input_mobile_phone" style="@style/UA.TextView.Normal" />
+    <View style="@style/UA.Divider.Solid.Horizontal" />
+    <LinearLayout android:id="@id/ua_register_country_layout" android:clickable="true" style="@style/UA.EditText.Layout">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ua_reg_mobile_country_hint" style="@style/UA.EditText.Theme" />
+        <TextView android:gravity="right" android:id="@id/ua_register_tv_country_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/ua_reg_mobile_country_name" android:layout_weight="1.0" style="@style/UA.EditText.Theme" />
+        <TextView android:ellipsize="middle" android:id="@id/ua_register_tv_country_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ua_reg_mobile_country_number" android:singleLine="true" style="@style/UA.EditText.Theme" />
+        <ImageButton android:src="@drawable/ua_ic_arrow_right" android:contentDescription="@string/ua_contentDescription" style="@style/UA.EditText.DrawableRight" />
+    </LinearLayout>
+    <View style="@style/UA.Divider.Solid.Horizontal" />
+    <LinearLayout style="@style/UA.EditText.Layout">
+        <ImageView android:src="@drawable/ua_ic_reg_mobile" android:contentDescription="@string/ua_contentDescription" style="@style/UA.EditText.DrawableLeft" />
+        <com.yy.udbauth.ui.widget.UdbEditText android:id="@id/ua_register_et_mobile" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/ua_reg_mobile_hint" android:singleLine="true" android:maxLength="30" android:layout_weight="1.0" android:inputType="phone" style="@style/UA.EditText.Theme" />
+        <ImageButton android:id="@id/ua_register_btn_clear_mobile" android:src="@drawable/ua_ic_delete" android:contentDescription="@string/ua_contentDescription" style="@style/UA.EditText.DrawableRight" />
+    </LinearLayout>
+    <View style="@style/UA.Divider.Solid.Horizontal" />
+    <Button android:id="@id/ua_register_btn_goto_step2" android:layout_width="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginTop="37.0dip" android:layout_marginRight="15.0dip" android:text="@string/ua_reg_btn_next" style="@style/UA.Button.Theme" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+        <CheckBox android:id="@id/ua_register_cb_agree" android:layout_width="wrap_content" android:layout_height="50.0dip" android:checked="false" android:button="@null" android:text="@string/ua_register_txt_agree" android:drawableLeft="@drawable/ua_selector_checkbox" android:drawablePadding="5.0dip" style="@style/UA.TextView.Normal" />
+        <TextView android:id="@id/ua_register_btn_see_license" android:background="@null" android:clickable="true" android:text="@string/ua_register_txt_user_agreement" style="@style/UA.TextView.Theme" />
+    </LinearLayout>
+</LinearLayout>

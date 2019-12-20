@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#fff6f6f6" android:padding="0.0dip" android:layout_height="wrap_content" style="@style/UA.EditText.Layout">
+        <LinearLayout android:gravity="center_vertical" android:background="@drawable/ua_shape_edittext_round" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <ImageView android:layout_marginLeft="10.0dip" android:src="@drawable/ua_ic_search" android:contentDescription="@string/ua_contentDescription" style="@style/UA.EditText.DrawableLeft" />
+            <com.yy.udbauth.ui.widget.UdbEditText android:textSize="15.0sp" android:textColorHint="#ffc9c8ce" android:id="@id/ua_fragment_country_select_et_keyword" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/ua_country_select_hint" android:singleLine="true" android:maxLength="30" android:layout_weight="1.0" style="@style/UA.EditText.Theme" />
+            <ImageButton android:id="@id/ua_fragment_country_select_btn_clear_keyword" android:layout_marginRight="5.0dip" android:src="@drawable/ua_ic_delete" android:contentDescription="@string/ua_contentDescription" style="@style/UA.EditText.DrawableRight" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="0.6dip" />
+    <com.yy.udbauth.ui.widget.IndexableListView android:id="@id/ua_fragment_country_select_listview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:cacheColorHint="#ff000000" android:divider="#ffdddddd" android:dividerHeight="1.0px" />
+</LinearLayout>

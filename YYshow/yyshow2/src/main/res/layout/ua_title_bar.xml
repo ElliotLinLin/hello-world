@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ua_titlebar_layout" style="@style/UA.TitleBar.Layout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/ua_titlebar_back" android:contentDescription="@string/ua_contentDescription" style="@style/UA.TitleBar.ImageButton.Back" />
+    <TextView android:gravity="center_horizontal" android:id="@id/ua_titlebar_title" android:layout_centerInParent="true" style="@style/UA.TitleBar.Title" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ProgressBar android:id="@id/ua_titlebar_progress" android:visibility="gone" style="@style/UA.TitleBar.Progress" />
+        <ImageButton android:id="@id/ua_titlebar_menu" android:visibility="gone" android:contentDescription="@string/ua_contentDescription" style="@style/UA.TitleBar.ImageButton.Menu" />
+    </LinearLayout>
+</RelativeLayout>

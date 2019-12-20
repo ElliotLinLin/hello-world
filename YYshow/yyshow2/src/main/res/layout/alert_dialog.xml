@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="335.0dip" android:layout_height="170.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/text_view" android:layout_width="fill_parent" android:layout_height="120.0dip" android:textAlignment="center" />
+    <View android:id="@id/horizontal_divider" android:background="@color/gray27" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_below="@id/text_view" />
+    <View android:id="@id/vertical_divider" android:background="@color/gray27" android:layout_width="1.0px" android:layout_height="wrap_content" android:layout_below="@id/text_view" android:layout_centerHorizontal="true" />
+    <Button android:textSize="18.0sp" android:textColor="@color/gray40" android:id="@id/cancel_button" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/vertical_divider" android:layout_below="@id/horizontal_divider" android:layout_alignParentLeft="true" android:layout_toStartOf="@id/vertical_divider" android:layout_alignParentStart="true" />
+    <Button android:textSize="18.0sp" android:textColor="@color/bright_green" android:id="@id/ok_button" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/vertical_divider" android:layout_below="@id/horizontal_divider" android:layout_alignParentRight="true" android:layout_toEndOf="@id/vertical_divider" android:layout_alignParentEnd="true" />
+</RelativeLayout>

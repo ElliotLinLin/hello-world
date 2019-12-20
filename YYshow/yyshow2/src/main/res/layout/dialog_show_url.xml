@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="335.0dip" android:layout_height="170.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@android:color/white" android:gravity="center" android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="50.0dip" android:text="@string/app_name" android:textAlignment="center" />
+    <View android:background="@color/gray27" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/gray40" android:ellipsize="end" android:layout_gravity="center" android:id="@id/url_text_view" android:layout_width="262.0dip" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="1" android:layout_marginStart="20.0dip" />
+        <Button android:layout_gravity="center" android:id="@id/qrcode_button" android:background="@drawable/selector_qrc_grids_small" android:layout_width="17.0dip" android:layout_height="17.0dip" android:layout_marginStart="15.0dip" />
+    </LinearLayout>
+    <View android:background="@color/gray27" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textColor="@color/gray60" android:id="@id/cancel_button" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="取消" android:layout_weight="1.0" />
+        <View android:background="@color/gray27" android:layout_width="1.0px" android:layout_height="fill_parent" />
+        <Button android:textColor="@color/bright_green" android:id="@id/copy_button" android:background="@color/transparent" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="复制" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

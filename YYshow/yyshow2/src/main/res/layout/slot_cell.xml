@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/selector_rect_dashes" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/selector_cross" android:scaleType="center" android:contentDescription="@string/img_placeholder" />
+    <FrameLayout android:id="@id/video_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/highlight_border" android:background="@drawable/shape_rect_red_border" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>
